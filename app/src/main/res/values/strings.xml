@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_msg">We are happy to see you here!</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="add_user">Add User</string>
+    <string name="save">Save</string>
+    <string name="email">Email</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
+    <string name="deleted_msg">User deleted successfully</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="permission_msg">This app needs to access you current location in the order to show Weather Details</string>
+</resources>

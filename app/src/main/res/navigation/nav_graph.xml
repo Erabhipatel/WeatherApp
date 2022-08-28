@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoardFragment">
+
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.app.weatherapp.fragments.OnBoardFragment"
+        android:label="OnBoardFragment"
+        tools:layout="@layout/fragment_on_board">
+        <action
+            android:id="@+id/action_onBoardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.weatherapp.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_usersListFragment"
+            app:destination="@id/usersListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="com.app.weatherapp.fragments.UsersListFragment"
+        android:label="fragment_users_list"
+        tools:layout="@layout/fragment_users_list" >
+        <action
+            android:id="@+id/action_usersListFragment_to_userFormFragment"
+            app:destination="@id/userFormFragment" />
+        <action
+            android:id="@+id/action_usersListFragment_to_weatherReportFragment"
+            app:destination="@id/weatherReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFormFragment"
+        android:name="com.app.weatherapp.fragments.UserFormFragment"
+        android:label="UserFormFragment"
+        tools:layout="@layout/fragment_user_form"/>
+    <fragment
+        android:id="@+id/weatherReportFragment"
+        android:name="com.app.weatherapp.fragments.WeatherReportFragment"
+        android:label="WeatherReportFragment"
+        tools:layout="@layout/fragment_weather_report"/>
+</navigation>
