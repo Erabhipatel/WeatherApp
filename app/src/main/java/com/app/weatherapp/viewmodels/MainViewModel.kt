@@ -13,8 +13,8 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
-    var userName: String = "testapp@google.com"
-    var password: String = "Test@123456"
+    var userName: String = ""
+    var password: String = ""
     var firstName = ""
     var lastName = ""
     var email = ""
