@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface UserDao {
 
-    @Query("SELECT * from user_table")
+    @Query("SELECT * from user_table ORDER BY id DESC")
     fun getAllUser(): Flow<List<User>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

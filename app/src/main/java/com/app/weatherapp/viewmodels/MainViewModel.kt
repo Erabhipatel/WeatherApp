@@ -71,11 +71,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }else{
             insertUser(User(0,firstName, lastName, email))
             _addUserLiveData.value = "User added successfully"
+            firstName = ""
+            lastName = ""
+            email = ""
         }
         _addUserLiveData.value = null
-        firstName = ""
-        lastName = ""
-        email = ""
     }
 
     private fun insertUser(user: User){
